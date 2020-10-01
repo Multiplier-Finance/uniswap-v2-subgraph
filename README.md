@@ -1,3 +1,10 @@
+# Deployment instruction
+1. Grant access to TheGraph  => `graph auth https://api.thegraph.com/deploy/ <ACCESS_TOKEN>`
+2. Update subgraph name in package.json `graph deploy <subgraph_name> ...`
+3. `yarn codegen`
+4. `yarn build`
+5. `yarn deploy`
+
 # Uniswap V2 Subgraph
 
 [Uniswap](https://uniswap.org/) is a decentralized protocol for automated token exchange on Ethereum.
@@ -9,6 +16,8 @@ This subgraph dynamically tracks any pair created by the uniswap factory. It tra
 - data on transactions
 - data on liquidity providers
 - historical data on Uniswap, pairs or tokens, aggregated by day
+
+
 
 ## Running Locally
 
