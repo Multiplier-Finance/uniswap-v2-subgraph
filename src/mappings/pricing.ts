@@ -4,9 +4,9 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-const USDC_WETH_PAIR = '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc' // ! TODO: change address
-const DAI_WETH_PAIR = '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11' // ! TODO: change address
-const USDT_WETH_PAIR = '0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852' // ! TODO: change address
+const USDC_WETH_PAIR = '0x04c83f71be42d3974e51a44026ce4cff1132325b' // ! TODO: change address
+const DAI_WETH_PAIR = '0x65df52abf5d795fc9b386b3889effec8cc20e821' // ! TODO: change address
+const USDT_WETH_PAIR = '0x7a229f4ed424d458304c3070723297c720c49433' // ! TODO: change address
 
 // dummy for testing
 export function getEthPriceInUSD(): BigDecimal {
@@ -49,6 +49,7 @@ let WHITELIST: string[] = [
   '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643', // cDAI
   '0x39aa39c021dfbae8fac545936693ac917d5e7563', // cUSDC
   '0x531C3A8926e4c4b4cC50DC1De83E1E7fa0B2738E', // TAKO
+  '0x8a6f3bf52a26a21531514e23016eeae8ba7e7018', // MXX
   '0x86fadb80d8d2cff3c3680819e4da99c10232ba0f', // EBASE
   '0x57ab1ec28d129707052df4df418d58a2d46d5f51', // sUSD
   '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2', // MKR
@@ -61,10 +62,10 @@ let WHITELIST: string[] = [
 ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
-let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('400000')
+let MINIMUM_USD_THRESHOLD_NEW_PAIRS = BigDecimal.fromString('5000')
 
 // minimum liquidity for price to get tracked
-let MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('2')
+let MINIMUM_LIQUIDITY_THRESHOLD_ETH = BigDecimal.fromString('0.5')
 
 /**
  * Search through graph to find derived Eth per token.
