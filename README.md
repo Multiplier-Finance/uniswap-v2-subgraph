@@ -1,3 +1,10 @@
+# Configuration
+- pricing.ts
+  - Whitelist: WETH, DAI, USDC, USDT, TUSD, cDAI, cUSDC, TAKO, MXX, EBASE, sUSD, MKR, COMP, LINK, ANT, SNX, YFI, yCurv
+  - MINIMUM_USD_THRESHOLD_NEW_PAIRS: 5000 USD
+  - MINIMUM_LIQUIDITY_THRESHOLD_ETH: 0.5 ETH
+
+
 # Deployment instruction
 1. Grant access to TheGraph  => `graph auth https://api.thegraph.com/deploy/ <ACCESS_TOKEN>`
 2. Update subgraph name in package.json `graph deploy <subgraph_name> ...`
