@@ -4,9 +4,9 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-const USDC_WETH_PAIR = '0x04c83f71be42d3974e51a44026ce4cff1132325b' // ! TODO: change address
-const DAI_WETH_PAIR = '0x65df52abf5d795fc9b386b3889effec8cc20e821' // ! TODO: change address
-const USDT_WETH_PAIR = '0x7a229f4ed424d458304c3070723297c720c49433' // ! TODO: change address
+const USDC_WETH_PAIR = '0x04c83f71be42d3974e51a44026ce4cff1132325b'
+const DAI_WETH_PAIR = '0x65df52abf5d795fc9b386b3889effec8cc20e821'
+const USDT_WETH_PAIR = '0x7a229f4ed424d458304c3070723297c720c49433'
 
 // dummy for testing
 export function getEthPriceInUSD(): BigDecimal {

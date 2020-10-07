@@ -58,6 +58,7 @@ export function handleNewPair(event: PairCreated): void {
     token0.untrackedVolumeUSD = ZERO_BD
     token0.totalLiquidity = ZERO_BD
     // token0.allPairs = []
+    token0.mostLiquidPairs = []
     token0.txCount = ZERO_BI
   }
 
@@ -80,6 +81,7 @@ export function handleNewPair(event: PairCreated): void {
     token1.untrackedVolumeUSD = ZERO_BD
     token1.totalLiquidity = ZERO_BD
     // token1.allPairs = []
+    token1.mostLiquidPairs = []
     token1.txCount = ZERO_BI
   }
 
